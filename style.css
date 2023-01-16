@@ -672,6 +672,101 @@ body {
 
 }
 
+/*--------page__practice---------------------------------------*/
+
+.page__practice {
+    
+}
+
+.practice {
+    padding: 125px 0 80px 0;
+}
+
+.practice____container {}
+
+
+.practice__heading {
+    margin: 0 0 45px 0;
+}
+
+.practice__body {
+    margin: 0 -20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.practice__column {
+    padding: 0 20px;
+    
+    flex: 0 1 25%;
+}
+
+.practice__item {
+    
+}
+
+.item-practice {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.item-practice__content{
+    flex: 1 1 auto;
+    padding: 30px;
+}
+
+.item-practice__link {
+    color: #252B42;
+    display: inline-block;
+}
+.item-practice__link:hover {
+    text-decoration: underline;
+    
+}
+
+
+.item-practice__link:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.item-practice__title {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+/* or 150% */
+letter-spacing: 0.1px;
+
+
+}
+
+.item-practice__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    /* or 143% */
+    
+    letter-spacing: 0.2px;
+    
+    /* second-text-color */
+    
+    color: #737373;}
+
+.item-practice__image {
+    display: block;
+    padding: 0 0 60% 0;
+}
+
+
+
+
+/*-----------------------------------------------*/
+
 
 /*-----подвал------------------------------*/
 
