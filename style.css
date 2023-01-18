@@ -789,9 +789,90 @@ letter-spacing: 0.1px;
 
 
 
-/*-----------------------------------------------*/
+/*-----page__whoweare ------------------------------------------*/
+
+.page__whoweare {}
+
+.whoweare {
+    padding: 80px 0 130px 0;
+}
+
+.whoweare__container{}
+
+.whoweare__heading {
+    margin: 0 0 100px 0;
+}
 
 
+.whoweare__title {}
+
+.whoweare__text {}
+
+
+
+.whoweare__body {
+    display: flex;
+}
+
+.whoweare__video {
+    flex: 0 0 57%;
+    position: relative;
+    padding: 0 0 42.25% 0;
+}
+
+.whoweare__video iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+object-fit: cover;
+}
+
+.whoweare__content{
+    flex: 1 1 auto;
+    padding: 0 0 0 121px;
+} 
+
+.whoweare__items {}
+
+.whoweare__item {}
+
+.item-whoweare {}
+
+.item-whoweare__icon {}
+
+.item-whoweare__body {}
+
+.item-whoweare__title {font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 150% */
+    
+    letter-spacing: 0.1px;
+    
+    /* text-color */
+    
+    color: #252B42;}
+
+.item-whoweare__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    /* identical to box height, or 171% */
+    
+    letter-spacing: 0.2px;
+    
+    /* second-text-color */
+    
+    color: #737373;
+}
+
+.item-whoweare__text:not(:last-child) {
+    margin: 0 0 50px 0;
+}
+
+/*----------------------------------------*/
 /*-----подвал------------------------------*/
 
 .footer {}
