@@ -216,10 +216,7 @@ body {
 
 
 .menu__link:hover {
-    border-bottom: 1px solid #4B2525;
-    color: #4B2525;
-    position: relative;
-    bottom: 2px;
+    text-decoration: underline;
 
 }
 
@@ -338,28 +335,33 @@ body {
 
 .pervactranica__button-yellov {
     background-color: #FF7B47;
-    box-shadow: 0 5px 0px #FFB79A;
-    transition-duration: 1s;
+    /* box-shadow: 0 5px 0px #FFB79A; */
+    transition-duration: 0.5s;
+    border: 1px solid #FF7B47;
 
 }
 
 .pervactranica__button-yellov:hover {
-    top: 2px;
+    /* top: 2px;
     position: relative;
     background-color: #A64017;
-    box-shadow: 0 3px 0px #FFB79A;
-
+    box-shadow: 0 3px 0px #FFB79A; */
+    background-color: #ffffff;
+    color: #FF7B47;
 }
 
 
 .pervactranica-button-transparent {
     color: #0D5C63;
     border: 1px solid #0D5C63;
+    transition-duration: 0.5s;
 
-    background: none;
 }
 
-
+.pervactranica-button-transparent:hover {
+    color: #ffffff;
+    background-color: #0D5C63;
+}
 
 .pervactranica__image {
     position: absolute;
@@ -1087,6 +1089,11 @@ align-items: center;
 text-align: center;
 color: #fff;
 padding: 0 22px;
+transition-duration: 0.5s;
+}
+.subscribe__button:hover{
+    background: #cf6339;
+    
 }
 @media (max-width:810px) {
     .subscribe__button {
@@ -1120,15 +1127,10 @@ padding: 0 22px;
 
 
 .getintouch__items {
-    
+    margin: 0 -15px;
 }
 
-@media (min-width:992px) {
-    .getintouch__items {
-        display: flex;
-        align-items: center;
-    }
-}
+
 
 .getintouch__item {
     flex: 0 1 33.333%;
@@ -1143,11 +1145,14 @@ padding: 0 22px;
     background: #fff;
     padding: 50px 15px;
 }
+
 .item-getintouch_active{
     padding: 80px 15px;
     background: #252B42;
     color: #fff;
 }
+
+
 
 .item-getintouch > *:not(:last-child){
     margin: 0 0 15px 0;
@@ -1222,12 +1227,266 @@ transform: all 0.3s ease 0s;
     background-color: #fff;
     color: #252B42;
 }
+@media (min-width:992px) {
+    .getintouch__items {
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+@media (max-width:992px) {
+    .getintouch__heading {
+        padding: 0 0 50px 0;
+    }
+    .getintouch {
+        padding: 50px 0 50px 0;
+    }
+    .item-getintouch_active{
+        padding: 50px 15px;
+    }
+    
+}
+@media (max-width:767px) {
+    .getintouch__heading {
+        padding: 0 0 30px 0;
+    }
+    
+}
+/*-----contact-------------------------*/
+.page__contact {}
+
+.contact {
+    padding: 42px 0;
+}
+
+.contact__container {}
 
 
+
+.contact__body {
+    
+}
+.contact__content{
+    padding: 0 0 20px 0;
+    
+} 
+@media (min-width:767px) {
+    .contact__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact__content{
+        padding: 0 20px 0 0;
+        
+    } 
+}
+
+
+.contact__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+/* identical to box height, or 133% */
+
+letter-spacing: 0.1px;
+}
+
+.contact__title:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.contact__text {
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 143%;
+
+
+letter-spacing: 0.2px;
+}
+
+
+.contact__button {
+     min-height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: #FF7B47;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 40px; 
+    transition: all 0.3s ease 0s;
+}
+.contact__button:hover{
+    background: #d8673b;
+}
 
 
 /*-----подвал------------------------------*/
 
 .footer {}
+
+.footer__top {
+    background: #17213C;
+    padding: 35px 0;
+}
+
+.footer__main {
+    
+
+}
+
+.footer__row{
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
+
+.footer__column {
+    padding: 15px 15px;
+    flex: 0 1 16.667%;
+    
+}
+
+.footer__column:last-child {
+    flex: 0 1 33.334%;
+}
+@media (max-width:992px) {
+    .footer__column {
+        flex: 0 1 25%;
+    }
+    .footer__column:last-child {
+        flex: 1 1 100%;
+    }
+}
+@media (max-width:767px) {
+    .footer__column {
+        flex: 0 1 50%;
+    }
+    
+}
+.footer__label {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.1px;
+margin-bottom: 20px;
+}
+
+.footer__menu {}
+
+
+.menu-footer {}
+
+.menu-footer__list {}
+
+.menu-footer__item {}
+
+.menu-footer__item:not(:last-child ){
+    margin-bottom: 10px;
+}
+
+.menu-footer__link {
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    /* identical to box height, or 171% */
+
+    letter-spacing: 0.2px;
+}
+
+.menu-footer__link:hover{
+    text-decoration: underline;
+}
+
+
+.footer__contacts {}
+
+.contacts-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-footer__item {
+    color: #fff;
+    padding-left: 34px;
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+}
+
+.contacts-footer__item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.contacts-footer__item:hover{
+    text-decoration: underline;
+}
+
+.contacts-footer__item_phone {
+    background:url('./img/footer/icn1.svg') 0 0 no-repeat ;
+}
+
+.contacts-footer__item_map {
+    background:url('./img/footer/icn2.svg') 0 0 no-repeat ;
+}
+
+.contacts-footer__item_email {
+    background:url('./img/footer/icn3.svg') 0 0 no-repeat ;
+}
+
+
+.footer__bottom {
+    padding: 25px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer__copy {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+
+    padding: 5px 0;
+}
+
+.footer__social {
+    
+}
+
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social__item {}
+
+.social__item:not(:last-child) {
+    margin-right: 20px;
+}
+@media (max-width:767px) {
+    .footer__container {
+        flex-direction: column;
+    }
+    .footer__copy {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
 
 /*-----еуые------------------------------*/
